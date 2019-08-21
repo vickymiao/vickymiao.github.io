@@ -1,2 +1,2 @@
-# vickymiao.github.io
-## Easy
+## Learning Site
+Be awesome. Never average!
