@@ -222,7 +222,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  background-color: #f9fafa;
+/*  background-color: #f9fafa;*/
 }
 
 .slider_section .row {
@@ -356,7 +356,7 @@ a:focus {
 }
 
 .furniture_section .box .detail-box h5 {
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
   font-size: 18px;
 }
 
