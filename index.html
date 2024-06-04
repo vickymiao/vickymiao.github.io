@@ -28,10 +28,43 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Snowplow -->
+<!-- Snowplow starts plowing -->
+  <script type="text/javascript">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","{{URL to sp.js}}","snowplow"));
+snowplow('newTracker', 'sp', '{{http://34.120.220.208}}', {
+    appId: 'my-app-id',
+});
+snowplow('enableActivityTracking', {
+  minimumVisitLength: 30,
+  heartbeatDelay: 10
+});
+
+snowplow('trackPageView');
+</script>
+<!-- Snowplow stops plowing -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WG7764QM');</script>
+<!-- End Google Tag Manager -->
+
+
+
 
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WG7764QM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
   <div class="hero_area">
     <!-- header section strats -->
@@ -53,7 +86,7 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="furniture.html">Catalog</a>
+                <a class="nav-link" href="catalog.html">Catalog</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
@@ -64,6 +97,7 @@
       </nav>
     </header>
     <!-- end header section -->
+
     <!-- slider section -->
     <section class="slider_section long_section">
       <div id="customCarousel" class="carousel slide" data-ride="carousel">
@@ -462,6 +496,11 @@
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
+  <!-- Snowplow -->
+  <script src="js/sp.js"></script>
+  <script type="text/javascript" async=1>
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[]; p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments) };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1; n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","{{URL to sp.js}}","snowplow"));
+</script>
 
 </body>
 
