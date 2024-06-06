@@ -28,24 +28,6 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-  <!-- Snowplow -->
-<!-- Snowplow starts plowing -->
-  <script type="text/javascript">
-;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
-p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
-};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
-n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","{{URL to sp.js}}","snowplow"));
-snowplow('newTracker', 'sp', '{{http://34.120.220.208}}', {
-    appId: 'my-app-id',
-});
-snowplow('enableActivityTracking', {
-  minimumVisitLength: 30,
-  heartbeatDelay: 10
-});
-
-snowplow('trackPageView');
-</script>
-<!-- Snowplow stops plowing -->
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -54,6 +36,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WG7764QM');</script>
 <!-- End Google Tag Manager -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N0P9HCZ1EJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N0P9HCZ1EJ');
+</script>
 
 
 
@@ -88,8 +80,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <li class="nav-item">
                 <a class="nav-link" href="catalog.html">Catalog</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
+<!--               <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a> -->
               </li>
             </ul>
           </div>
@@ -309,19 +301,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- end about section -->
 
-  <!-- blog section -->
-
-  <section class="blog_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Latest Blog
-        </h2>
-      </div>
-    </div>
-  </section>
-
-  <!-- end blog section -->
 
   <!-- client section -->
 
@@ -423,11 +402,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section class="info_section long_section">
 
       <div class="info_top " style="
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 150px;
+    padding-right: 150px;
 ">
         <div class="row ">
-          <div class="col-sm">
+          <div class="col-sm-3">
             <div class="info_links">
               <h4>
                 QUICK LINKS
@@ -435,7 +414,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="info_links_menu">
                 <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
                 <a class="" href="catalog.html">Catalog</a>
-                <a class="" href="blog.html">Blog</a>
               </div>
             </div>
           </div>
@@ -459,9 +437,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="">
                   <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
-                <a href="">
+<!--                 <a href="">
                   <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
+                </a> -->
                 <a href="">
                   <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
@@ -500,7 +478,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="js/sp.js"></script>
   <script type="text/javascript" async=1>
 ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[]; p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments) };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1; n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","{{URL to sp.js}}","snowplow"));
-</script>
+  </script>
+  <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
+
 
 </body>
 
